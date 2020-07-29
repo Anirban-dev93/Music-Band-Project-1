@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4 {
+  font-family: 'Overpass', sans-serif;
+}
+/*navigation bar styling is going to be done here.*/
+.navigationbar {
+  background-color: #838383;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+.logo {
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.navigationlist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+.navigationlist li {
+  list-style-type: none;
+}
+.navigationlist a {
+  text-decoration: none;
+  color: black;
+}
+/*navigation bar ends here and home styling starts here */
+.home img {
+  width: 100%;
+}
+/*  band members and band details band styling */
+.banddetails {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.banddetails p {
+  width: 60%;
+  padding: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 2;
+  text-align: justify;
+}
+.bandmembers {
+  text-align: center;
+  margin: 20px 0;
+}
+.bandmembers img {
+  padding: 0 20px;
+}
+/* tour details styling starts here */
+.tour {
+  background-color: black;
+}
+.headings {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+.headings h2 {
+  padding-bottom: 20px;
+}
+.cities {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+.newyorkcity {
+  width: 250px;
+  height: 300px;
+  text-align: left;
+  background-color: white;
+}
+.dubaicity {
+  width: 250px;
+  height: 300px;
+  text-align: left;
+  background-color: white;
+}
+.londoncity {
+  width: 250px;
+  height: 300px;
+  text-align: left;
+  background-color: white;
+}
+.citycontainer {
+  padding: 5px 10px 40px;
+}
+.citycontainer p {
+  margin-bottom: 25px;
+}
+.citylink {
+  padding: 1em 1.5em;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+.citylink:hover {
+  color: black;
+  background-color: grey;
+}
+/* tour details styling ends contact styling starts here */
+.contact {
+  padding: 30px 0 50px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contactheadings {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.contactdetails {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.contactnumber {
+  font-weight: bold;
+  font-size: 16px;
+}
+.contactnumber img {
+  margin-right: 20px;
+}
+.contactnumber p {
+  margin-bottom: 5px;
+}
+.contactform input {
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 2px solid grey;
+}
+.contactform input[type=submit] {
+  background-color: black;
+  color: white;
+}
+.contactform input[type=submit]:hover {
+  background-color: grey;
+  color: black;
+}
+/* contact styling ends here */
+.lastsegment img {
+  width: 100%;
+}
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.footer p {
+  margin-top: 10px;
+  color: grey;
+}
+/* though i know this is not a very good job done but as a first job i think it is good. */
