@@ -12,7 +12,10 @@
         <div class="logo">
           The Band
         </div>
-        <ul class="navigationlist">
+        <button class="hamburger" id="hamburger">
+          <img src="images/hamburger.png" alt="hamburger menu">
+        </button>
+        <ul class="navigationlist" id="nav-ul">
           <li>
             <a href="#">HOME</a>
           </li>
@@ -126,5 +129,14 @@
         <img src="images/linkedin.png" alt="">
         <p>Powered by Ani</p>
       </footer>
+
+      <script>
+        const hamburger = document.getElementById('hamburger');
+        const navUl = document.getElementById('nav-ul');
+
+        hamburger.addEventListener('click', ()=> {
+          navUl.classList.toggle('show');
+        })
+      </script>
   </body>
 </html>

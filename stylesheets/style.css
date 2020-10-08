@@ -13,7 +13,8 @@ h1, h2, h3, h4 {
 .navigationbar {
   background-color: #838383;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   height: 8vh;
 }
@@ -21,6 +22,7 @@ h1, h2, h3, h4 {
   font-size: 24px;
   letter-spacing: 5px;
   font-weight: bold;
+  margin-left: 20px;
 }
 .navigationlist {
   display: flex;
@@ -34,6 +36,17 @@ h1, h2, h3, h4 {
 .navigationlist a {
   text-decoration: none;
   color: black;
+}
+
+.hamburger {
+  display: none;
+  background-color: #838383;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger:focus {
+  outline: none;
 }
 /*navigation bar ends here and home styling starts here */
 .home img {
@@ -166,3 +179,22 @@ h1, h2, h3, h4 {
   color: grey;
 }
 /* though i know this is not a very good job done but as a first job i think it is good. */
+
+@media screen and (max-width: 760px) {
+  .navigationlist {
+    display: none;
+    width: 100%;
+    margin-top: 50px;
+    z-index: 3;
+    flex-direction: column;
+  }
+
+  .navigationlist.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 20px;
+  }
+}
